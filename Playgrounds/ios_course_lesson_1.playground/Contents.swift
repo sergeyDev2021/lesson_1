@@ -35,6 +35,8 @@ exit += a % b
  - Сделать решение используя Ternary operator
  - Сделать решение используя if {} else {}
  */
+let hasValue: Bool = false
+let result1: Int = hasValue ? 30 : -93
 
 // Example
 let xValue = true
@@ -44,6 +46,8 @@ let yValue = xValue ? 1 : 0
  - Обьявить переменную Optinal<String> sourceString
  - Используя Nil-Coalescing Operator, sourceString и default value "string" проинициализировать новую переменную String с именем resultString
  */
+let sourceString: String? = nil
+let resultString: String = sourceString ?? "default"
 
 // Example
 let optinalString: String? = nil
@@ -53,13 +57,20 @@ let stringValue: String = optinalString ?? "default"
  - Создать Range от 34 до 51 включительно
  - Сделать конструкцию for in {range} и распечатать значение используя команду print
  */
-
+let range: Range = 34..<52
+for item in range {
+    print(item)
+}
 /*
  - Создать переменную count с типом Int равную 0
  - Создать Range от 99 до 130 не включая 130
  - Сделать конструкцию for in {range} и посчитать в переменную count значение всех значение range
  */
-
+var count: Int = 0
+let range1: Range = 99..<130
+for item in range1 {
+    count += item
+}
 /*
  - Создать One-sided UInt range
  - Распечатать используя команду print последнее значение range
