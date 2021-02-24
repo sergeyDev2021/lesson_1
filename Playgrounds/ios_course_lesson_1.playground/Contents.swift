@@ -15,6 +15,13 @@ import UIKit
  - Объявить переменную result со значением 0
  - Рассчитать остаток от деления x на y и прибавить его к result используя Compound Assignment Operator +=
  */
+let source: (Int, Int) = (65, 30)
+let x: Int = source.0
+let y: Int = source.1
+var result: Int = 0
+result += x/y
+
+
 
 // Example
 let input = (start: 102, offset: 100)
