@@ -57,7 +57,7 @@ let stringValue: String = optinalString ?? "default"
  - Создать Range от 34 до 51 включительно
  - Сделать конструкцию for in {range} и распечатать значение используя команду print
  */
-let range: Range = 34..<52
+let range: ClosedRange<Int> = 34...51
 for item in range {
     print(item)
 }
