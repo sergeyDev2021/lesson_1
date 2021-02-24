@@ -76,7 +76,9 @@ for item in range1 {
  - Распечатать используя команду print последнее значение range
  - Распечатать входит ли значение -1_000_000_000_000_000 в range
  */
+let range2: PartialRangeThrough = ...0
 
+print(range2.contains(-1_000_000_000_000_000))
 /*
  - Создать 2 константы x, y c произвольными значениями
  - Используя логические операторы &&, ||, ! (NOT) написать следующий код
@@ -84,7 +86,18 @@ for item in range1 {
  - С помощью команды print распечатать текст "OR" при условии x >= 1 или y > -1
  - С помощью команды print распечатать текст "NOT" при условии x != 10 или y != 10
  */
+let x1: Int = 10
+let y1: Int = 20
 
+if x1 == 1 && y1 < 0 {
+    print("AND")
+}
+if x1 >= 1 || y1 > -1 {
+    print("OR")
+}
+if x1 != 10 || y1 != 10{
+    print("NOT")
+}
 // ref: https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html
 
 /*
