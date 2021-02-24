@@ -19,7 +19,7 @@ let source: (Int, Int) = (65, 30)
 let x: Int = source.0
 let y: Int = source.1
 var result: Int = 0
-result += x/y
+result += x % y
 
 
 
