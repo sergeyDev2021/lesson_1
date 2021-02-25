@@ -77,7 +77,7 @@ for item in range1 {
  - Распечатать входит ли значение -1_000_000_000_000_000 в range
  */
 let range2: PartialRangeThrough = ...0
-//????
+//print(range2.endindex)
 print(range2.contains(-1_000_000_000_000_000))
 /*
  - Создать 2 константы x, y c произвольными значениями
@@ -113,22 +113,35 @@ here
 /*
  - Проинициализировать строку используя произвольный unicode (Special Characters in String Literals)
  */
+let n: String = "\u{21}"
 
 /*
  - Создать переменную типа String с пустым значением (Initializing an Empty String)
  - Прибавить к имеющейся строке строку "result"
  - Проверить строку на пустоту, в случае не пустой строки вывести с помощью print количество символов в строке
  */
-
+var  str2: String = ""
+str2 += "result"
+if !str2.isEmpty{
+    print(str2.count)
+}
 /*
  - Создать константу со значением "Swift iOS Dvelopment"
  - Распечатать с помощью print каждый символ с использованием for in
  */
-
+let str3: String = "Swift iOS Dvelopment"
+for chart in str {
+    print(chart)
+}
 /*
  - Создать константы intValue, uintValue с произвольными значениями
  - Используя String Interpolation обявить константу interpolationString с использованием констант из предыдущего шага
  */
+let intValue = 10
+let uintValue = "\u{201}"
+let intepolationString: String = String(intValue) + uintValue
+print(intepolationString)
+
 
 /*
  - Создать переменную insertString со значением "Swift iOS Dvelopment"
@@ -138,6 +151,10 @@ here
  - Найти index подстроки "iOS" используя команду firstIndex и распечатать используя print
  - Проверить с помощью функции hasSuffix начинается ли строка insertString с подстроки "swift"
  */
+var insertString: String = "Swift iOS Dvelopment"
+insertString += "!"
+insertString.insert("!", at: insertString.endIndex)
+print(insertString.firstIndex(of: "iOS"))
 
 /*
  - Создать строку xString со значением "x" yString = "y"
