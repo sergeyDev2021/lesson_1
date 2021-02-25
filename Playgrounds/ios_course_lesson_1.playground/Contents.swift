@@ -77,7 +77,7 @@ for item in range1 {
  - Распечатать входит ли значение -1_000_000_000_000_000 в range
  */
 let range2: PartialRangeThrough = ...0
-
+//????
 print(range2.contains(-1_000_000_000_000_000))
 /*
  - Создать 2 константы x, y c произвольными значениями
@@ -105,7 +105,11 @@ if x1 != 10 || y1 != 10{
     - String Literals
     - Multiline String Literals
  */
-
+let str: String = "SergeyDev"
+let str1: String = """
+I am
+here
+"""
 /*
  - Проинициализировать строку используя произвольный unicode (Special Characters in String Literals)
  */
