@@ -37,6 +37,13 @@ exit += a % b
  */
 let hasValue: Bool = false
 let result1: Int = hasValue ? 30 : -93
+let result11: Int
+if hasValue {
+    result11 = 30
+}
+else {
+    result11 = -93
+}
 
 // Example
 let xValue = true
@@ -46,8 +53,9 @@ let yValue = xValue ? 1 : 0
  - Обьявить переменную Optinal<String> sourceString
  - Используя Nil-Coalescing Operator, sourceString и default value "string" проинициализировать новую переменную String с именем resultString
  */
-let sourceString: String? = nil
-let resultString: String = sourceString ?? "default"
+var sourceString: Optional<String> = nil
+var resultString: String = sourceString ?? "string"
+
 
 // Example
 let optinalString: String? = nil
@@ -76,9 +84,10 @@ for item in range1 {
  - Распечатать используя команду print последнее значение range
  - Распечатать входит ли значение -1_000_000_000_000_000 в range
  */
-let range2: PartialRangeThrough = ...0
-//print(range2.endindex)
-print(range2.contains(-1_000_000_000_000_000))
+let range2 = ..."\u{12}"
+print(range2)
+//let range22: Int = Int(range2)
+//print(range2.contains(-1_000_000_000_000_000))
 /*
  - Создать 2 константы x, y c произвольными значениями
  - Используя логические операторы &&, ||, ! (NOT) написать следующий код
@@ -130,7 +139,7 @@ if !str2.isEmpty{
  - Распечатать с помощью print каждый символ с использованием for in
  */
 let str3: String = "Swift iOS Dvelopment"
-for chart in str {
+for chart in str3 {
     print(chart)
 }
 /*
@@ -140,7 +149,6 @@ for chart in str {
 let intValue = 10
 let uintValue = "\u{201}"
 let intepolationString: String = String(intValue) + uintValue
-print(intepolationString)
 
 
 /*
@@ -154,9 +162,14 @@ print(intepolationString)
 var insertString: String = "Swift iOS Dvelopment"
 insertString += "!"
 insertString.insert("!", at: insertString.endIndex)
-print(insertString.firstIndex(of: "iOS"))
+print(insertString.contains("iOS"))
 
 /*
  - Создать строку xString со значением "x" yString = "y"
  - Написать код печатающий с помощью print "yep!" при условии что строки xString и yString не равны
  */
+let xString: String = "x"
+let yString: String = "y"
+if xString != yString {
+    print("yep")
+}
